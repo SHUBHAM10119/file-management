@@ -8,7 +8,8 @@ import {
   Container,
   IconButton,
   Menu,
-  MenuItem
+  MenuItem,
+  Avatar
 } from '@mui/material';
 import { AccountCircle, Logout, Dashboard as DashboardIcon, Person } from '@mui/icons-material';
 import { useNavigate, Link } from 'react-router-dom';
@@ -45,9 +46,21 @@ function Navbar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            File Management System
-          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+            <Avatar 
+              src="/images/logo.png" 
+              alt="Logo" 
+              sx={{ 
+                width: 32, 
+                height: 32, 
+                marginRight: 1,
+                display: { xs: 'none', sm: 'flex' }
+              }} 
+            />
+            <Typography variant="h6" component="div">
+              File Management System
+            </Typography>
+          </Box>
           
           <Box sx={{ display: 'flex' }}>
             <Button 
