@@ -113,4 +113,5 @@ A full-stack web application that provides secure file upload, storage, and mana
 
 1. Register a new account or login with existing credentials
 2. Use the dashboard to upload, view, and manage files
-3. Access the profile page to update personal information 
+3. Access the profile page to update personal information
+4. ![addr](https://github.com/user-attachments/assets/7b50130e-08ad-4172-a35f-8353d3b05197)
